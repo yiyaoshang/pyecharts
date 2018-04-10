@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}数据管理平台{% endblock %}
+{% block css %}
+<!-- Bootstrap Core CSS -->
+    <link href="../static/vender/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../static/vender/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../static/dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../static/vender/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../static/vender/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+{% endblock %}
+{% block content %} 
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">折线趋势图</h1>
+                </div>
+        </div>
+            <div class="row">
+                <div class="col-lg-6">
+                {{myechart|safe}}
+                </div>
+            </div>
+{% endblock %}
+{% block js %}
+    <!-- jQuery -->
+    <script src="../static/vender/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../static/vender/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../static/vender/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Flot Charts JavaScript -->
+    <script src="../static/vender/flot/excanvas.min.js"></script>
+    <script src="../static/vender/flot/jquery.flot.js"></script>
+    <script src="../static/vender/flot/jquery.flot.pie.js"></script>
+    <script src="../static/vender/flot/jquery.flot.resize.js"></script>
+    <script src="../static/vender/flot/jquery.flot.time.js"></script>
+    <script src="../static/vender/flot-tooltip/jquery.flot.tooltip.min.js"></script>
+    <script src="../static/data/flot-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../static/dist/js/sb-admin-2.js"></script>
+{% endblock%}
+
